@@ -56,7 +56,6 @@ class Book{
 public class Question1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Author a=new Author("Nadeem","janifa@gmail.com",'J');
        Book b=new Book("jani",a,25.0,34);
       System.out.println(b);

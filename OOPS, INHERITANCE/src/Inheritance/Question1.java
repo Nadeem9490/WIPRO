@@ -1,46 +1,33 @@
-package Inheritance;
- //Parent class
+package  Inheritance;
 class Animal {
-    void eat() {
+    public void eat() {
         System.out.println("Animal is eating");
     }
 
-    void sleep() {
+    public void sleep() {
         System.out.println("Animal is sleeping");
     }
 }
-
-// Child class
 class Bird extends Animal {
-    @Override
-    void eat() {
-        System.out.println("Bird is pecking at food");
+    public void eat() {
+        System.out.println("Bird is pecking food");
     }
-
-    @Override
-    void sleep() {
-        System.out.println("Bird is sleeping in its nest");
+    public void sleep() {
+        System.out.println("Bird is sleeping in the nest");
     }
-
-    void fly() {
-        System.out.println("Bird is flying in the sky");
+    public void fly() {
+        System.out.println("Bird is flying");
     }
 }
 
-// Main class to run the program
 public class Question1 {
     public static void main(String[] args) {
-        // Create instance of Animal class
-        Animal animal = new Animal();
-        System.out.println("Animal Class Methods:");
-        animal.eat();
-        animal.sleep();
-
-        // Create instance of Bird class
-        Bird bird = new Bird();
-        System.out.println("\nBird Class Methods:");
-        bird.eat();
-        bird.sleep();
-        bird.fly();
+        Animal a = new Animal();
+        a.eat();
+        a.sleep();
+        Bird b = new Bird();
+        b.eat();
+        b.sleep();
+        b.fly();
     }
 }
